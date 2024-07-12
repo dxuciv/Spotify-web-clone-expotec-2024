@@ -1,0 +1,167 @@
+@import "https://fonts.googleapis.com/css?family=Press%20Start%202P";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Press Start 2P";
+  font-size: 1rem;
+  line-height: 2;
+  height: 100%;
+  background-color: hsl(217, 40%, 10%);
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+  color: #fff090;
+}
+
+li {
+  color: #4faf44;
+}
+
+.arrow i {
+  display: none;
+}
+
+.arrow {
+  width: 450px;
+  height: 50px;
+  position: absolute;
+  position: relative;
+  display: block;
+  color: #c0bb5a;
+}
+
+
+.title {
+  display: none;
+  width: 150px;
+  height: 430px;
+  top: -250px;
+  position: absolute;
+  position: relative;
+  display: block;
+  color: #f6eb14;
+}
+
+@keyframes snow {
+  0% {
+    opacity: 0;
+    transform: translateY(0px);
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(650px);
+  }
+}
+
+.box-of-star1,
+.box-of-star2,
+.box-of-star3,
+.box-of-star4 {
+  width: 100%;
+  position: absolute;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  transform: translateY(0px);
+  height: 10px;
+}
+
+.box-of-star1 {
+  animation: snow 5s linear infinite;
+}
+
+.box-of-star2 {
+  animation: snow 5s -1.64s linear infinite;
+}
+
+.box-of-star3 {
+  animation: snow 5s -2.3s linear infinite;
+}
+
+.box-of-star4 {
+  animation: snow 5s -3.3s linear infinite;
+}
+
+.star {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  z-index: 10;
+  opacity: 0.7;
+}
+
+.star:before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  z-index: 10;
+  top: 80px;
+  left: 70px;
+  opacity: 0.7;
+}
+
+.star:after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  z-index: 10;
+  top: 8px;
+  left: 170px;
+  opacity: 0.9;
+}
+
+.star-position1 {
+  top: 30px;
+  left: 20px;
+}
+
+.star-position2 {
+  top: 110px;
+  left: 250px;
+}
+
+.star-position3 {
+  top: 60px;
+  left: 570px;
+}
+
+.star-position4 {
+  top: 120px;
+  left: 900px;
+}
+
+.star-position5 {
+  top: 20px;
+  left: 1120px;
+}
+
+.star-position6 {
+  top: 90px;
+  left: 1280px;
+}
+
+.star-position7 {
+  top: 30px;
+  left: 1480px;
+}
